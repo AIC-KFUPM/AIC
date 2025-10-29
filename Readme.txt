@@ -6,7 +6,5 @@
   License: MIT
   © 2025 KFUPM AI Club. All rights reserved.
 
-  Template Name: Tour
-  Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
-  Author: BootstrapMade.com
+  TemplateAuthor: BootstrapMade.com
   License: https://bootstrapmade.com/license/
