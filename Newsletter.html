@@ -67,6 +67,7 @@
           width: 900px;
           height: 600px;
           margin: 20px auto;
+          display:  block;
         }
       
         #magazine > div,
@@ -107,39 +108,6 @@
       </style>
       
 
-      <script type="text/javascript">
-
-      $(window).on('load', function() {
-        if ($.isFunction($.fn.turn)) {
-          $('#magazine').turn({
-            display: 'double',
-            acceleration: true,
-            gradients: !$.isTouch,
-            autoCenter: true,
-            elevation: 50,
-            when: {
-              turned: function(e, page) {
-                console.log('Current view: ', $(this).turn('view'));
-              }
-            }
-          });
-          console.log("✅ Turn.js initialized!");
-        } else {
-          console.error("❌ Turn.js not loaded.");
-        }
-      });
-        
-        
-        $(window).bind('keydown', function(e){
-          
-          if (e.keyCode==37)
-            $('#magazine').turn('previous');
-          else if (e.keyCode==39)
-            $('#magazine').turn('next');
-            
-        });
-
-      </script>
       <div class="magazine_wrapper" style="text-align: center;">
         <h4>
           AI Club Newsletters
@@ -246,7 +214,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
@@ -262,6 +229,40 @@
 
   <script type="text/javascript" src="assets/js/turn.min.js"></script>
     <link href="assets/css/main.css" rel="stylesheet">
+  
+      <script type="text/javascript">
+
+      $(window).on('load', function() {
+        if ($.isFunction($.fn.turn)) {
+          $('#magazine').turn({
+            display: 'double',
+            acceleration: true,
+            gradients: !$.isTouch,
+            autoCenter: true,
+            elevation: 50,
+            when: {
+              turned: function(e, page) {
+                console.log('Current view: ', $(this).turn('view'));
+              }
+            }
+          });
+          console.log("✅ Turn.js initialized!");
+        } else {
+          console.error("❌ Turn.js not loaded.");
+        }
+      });
+        
+        
+        $(window).bind('keydown', function(e){
+          
+          if (e.keyCode==37)
+            $('#magazine').turn('previous');
+          else if (e.keyCode==39)
+            $('#magazine').turn('next');
+            
+        });
+
+      </script>
 
 
 </html>
