@@ -7,8 +7,6 @@
   <title>AIC</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="assets/js/turn.min.js"></script>
 
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -23,7 +21,6 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Tour
@@ -75,6 +72,13 @@
           height: 500px;
           width: 800px;
         }
+        #magazine > div {
+          width: 400px; /* half width for double-page */
+          height:500px;
+          background-size: cover;
+          background-position: center;
+        }
+        
         @media (max-width: 900px) {
           #magazine{
             width: 400px;
@@ -103,19 +107,25 @@
 
       <script type="text/javascript">
 
-        $(window).ready(function() {
+      $(window).on('load', function() {
+        if ($.isFunction($.fn.turn)) {
           $('#magazine').turn({
-                    display: 'double',
-                    acceleration: true,
-                    gradients: !$.isTouch,
-                    elevation:50,
-                    when: {
-                      turned: function(e, page) {
-                        console.log('Current view: ', $(this).turn('view'));
-                      }
-                    }
-                  });
-        });
+            display: 'double',
+            acceleration: true,
+            gradients: !$.isTouch,
+            autoCenter: true,
+            elevation: 50,
+            when: {
+              turned: function(e, page) {
+                console.log('Current view: ', $(this).turn('view'));
+              }
+            }
+          });
+          console.log("✅ Turn.js initialized!");
+        } else {
+          console.error("❌ Turn.js not loaded.");
+        }
+      });
         
         
         $(window).bind('keydown', function(e){
@@ -246,6 +256,9 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/turn.min.js"></script>
 
 </html>
 
