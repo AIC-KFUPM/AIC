@@ -63,21 +63,22 @@
         body{
           background:#ccc;
         }
-        #magazine{
-          background-color: #7582ac25;
-          margin:20px auto;
-          justify-content: center;
-          display: flex;
-          min-height: 400px;
-          height: 500px;
-          width: 800px;
+      #magazine {
+          width: 900px;
+          height: 600px;
+          margin: 20px auto;
         }
-        #magazine > div {
-          width: 400px; /* half width for double-page */
-          height:500px;
-          background-size: cover;
+      
+        #magazine > div,
+        #magazine .turn-page {
+          width: 450px;               /* half width for double mode */
+          height: 600px;
+          background-repeat: no-repeat;
           background-position: center;
+          background-size: cover;     /* fills page, no “three columns” effect */
         }
+
+
         
         @media (max-width: 900px) {
           #magazine{
@@ -86,10 +87,7 @@
           }
           
         }
-        #magazine .turn-page{
-          background-color:#ccc;
-          background-size:100% 100%;
-        }
+
         .buttons button{
           background-color: #7582ac25;
           border: none;
@@ -98,10 +96,14 @@
           height: 50px;
           width: 50px;
           border-radius: 50%;
+          padding: 8px 14px;
           cursor: pointer;
           color: #ebebeb;
           transition: background-color 0.3s, color 0.3s;
+          cursor: pointer;
         }
+              
+
       </style>
       
 
