@@ -231,6 +231,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
   
       <script type="text/javascript">
+        console.log("jQuery loaded?", typeof $ !== 'undefined');
 
       $(window).on('load', function() {
         if ($.isFunction($.fn.turn)) {
