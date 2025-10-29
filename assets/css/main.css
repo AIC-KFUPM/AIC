@@ -334,11 +334,7 @@ h6 {
   margin-top: 6px;
   font-size: 13px;
 }
-@media (max-width: 767px) {
-#aic-logo{
-  display: flex;
-  justify-content: center;
-}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
