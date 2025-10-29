@@ -521,10 +521,19 @@ section,
   color: var(--accent-color);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 400px) {
+.hero-text{
+  margin: 15px
+  }
 #but-left{
   display: none;
-}}
+}
+.travel-hero .hero-text .hero-buttons .btn.btn-outline {
+  width: 40%;
+  min-width: 150px;
+  
+  }
+}
 
 
 /*--------------------------------------------------------------
