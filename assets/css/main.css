@@ -697,6 +697,12 @@ section,
   transform: translateY(-1px);
 }
 
+@media (max-width: 576px) {
+  .p-centerr {
+    text-align: center;
+    margin: 0 20px
+  }
+  
 @media (max-width: 992px) {
   .travel-hero .hero-text {
     text-align: center;
