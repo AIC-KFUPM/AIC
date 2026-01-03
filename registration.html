@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AIC</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!--<link href="assets/vendor/aos/aos.css" rel="stylesheet">-->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/img/aic.png" rel="icon">
+
+  <!-- =======================================================
+  * Template Name: Tour
+  * Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
+  * Updated: Jul 01 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <img src="assets/img/aic.png" alt="icon" class="img-fluid" style="height: 40px; margin-right: 10px;">
+      </a>
+
+      <a class="btn-getstarted" href="Newsletter.html">Check Our Newsletters</a>
+
+    </div>
+  </header>
+
+<main class="main">
+
+<section class="section light-background" style="padding-top:140px">
+  <div class="container">
+
+    <div class="section-title text-center">
+      <h2>AI Club Registration</h2>
+      <p>Register to be part of KFUPM’s Artificial Intelligence Club.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card p-5 shadow-sm" style="border-radius:16px">
+
+          <form id="aic-registration-form" class="row g-3">
+
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Full Name</label>
+              <input id="fullName" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">KFUPM ID</label>
+              <input id="studentId" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Email</label>
+              <input id="email" type="email" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Major</label>
+              <input id="major" class="form-control" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label fw-semibold">Why do you want to join?</label>
+              <textarea id="reason" class="form-control" rows="4"></textarea>
+            </div>
+
+            <!-- AI experience -->
+            <div class="col-12">
+              <label class="form-label fw-semibold">Do you have experience in AI?</label>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="aiExperience" value="Yes" required>
+                <label class="form-check-label">Yes</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="aiExperience" value="No">
+                <label class="form-check-label">No</label>
+              </div>
+            </div>
+
+            <div class="col-12" id="aiDetailsBox" style="display:none">
+              <label class="form-label fw-semibold">If yes, describe your experience</label>
+              <textarea id="aiDetails" class="form-control" rows="3"></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+              <button class="btn btn-primary px-5 py-2">Submit registration</button>
+            </div>
+
+            <p id="form-status" class="text-center mt-2"></p>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer id="footer" class="footer position-relative dark-background">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Apply to Be Part of <span style="color: #7582ac;">Our Community</span></h4>
+            <div class="container section-title" data-aos="fade-up" style="padding-bottom: 0px; margin: 20px; padding-right: 32px">
+              <a href="registration.html">
+                <h2 style="padding: 20px 60px;">Apply</h2></a>
+            </div><!-- End Section Title -->  
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">KFUPM Artificial Intelligence Club</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <h4>Contact Us</h4>
+            <p class="mt-3"><strong>Phone:</strong> <span>+966 56 451 4179</span></p>
+            <p><strong>Email:</strong> <span>AI-Club@kfupm.edu.sa</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Stay connected with the KFUPM AI Club for updates, events, and opportunities.</p>
+          <div class="social-links d-flex">
+            <a href="https://x.com/KFUPMAIC"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.linkedin.com/company/kfupm-artificial-intelligence-club-aic/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12" id="aic-logo">
+          <img src="assets/img/icon.png" alt="icon" style="height: 200px; float: right; ">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <strong class="px-1 sitename">AIC</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        
+      </div>
+    </div>
+
+  </footer>
+
+<script>
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwtB23ot39lfeMQb4jAiJPK9yualY9isZVSGinH0C8G7dxQ_bYbGYN0rPOaCeXQuUN3/exec";
+
+  const aiDetailsBox = document.getElementById("aiDetailsBox");
+  const aiRadios = document.querySelectorAll('input[name="aiExperience"]');
+
+  aiRadios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      aiDetailsBox.style.display = radio.value === "Yes" ? "block" : "none";
+      if (radio.value === "No") aiDetails.value = "";
+    });
+  });
+
+  document.getElementById("aic-registration-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const status = document.getElementById("form-status");
+    const aiExperience = document.querySelector('input[name="aiExperience"]:checked').value;
+
+    const data = {
+      name: fullName.value,
+      studentId: studentId.value,
+      email: email.value,
+      major: major.value,
+      reason: reason.value,
+      aiExperience: aiExperience,
+      aiDetails: aiExperience === "Yes" ? aiDetails.value : ""
+    };
+
+    status.style.color = "#7582ac";
+    status.textContent = "Submitting...";
+
+    fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(data)
+    }).then(() => {
+      status.textContent = "Thank you! Your registration has been submitted.";
+      this.reset();
+      aiDetailsBox.style.display = "none";
+    }).catch(() => {
+      status.style.color = "red";
+      status.textContent = "Submission failed.";
+    });
+  });
+</script>
+
+</body>
+</html>
